@@ -1,0 +1,13 @@
+<section class="urgency-banner py-4" style="background-color:#8B0000;color:#FFF200;">
+  <div class="page-width text-center">
+    <strong>Only <span id="countdown">100</span> copies available.</strong>
+    <span>First come, first hired.</span>
+  </div>
+</section>
+<script>
+  (function(){
+    const el = document.getElementById('countdown');
+    let count = 100;
+    setInterval(()=>{ if(count>0) el.textContent = --count; }, 60000);
+  })();
+</script>
